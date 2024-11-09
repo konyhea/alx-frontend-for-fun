@@ -61,11 +61,11 @@
   
     /** HEADER **/
     --header-padding: 4rem 0 0;
-    --header-logo-position: relative;
-    --header-logo-link-display: inline-block;
-    --header-logo-link-position: absolute;
-    --header-logo-link-top: -1rem;
-    --header-logo-link-left: 0;
+    /* --header-logo-position: relative; */
+    /* --header-logo-link-display: inline-block; */
+    /* --header-logo-link-position: absolute; */
+    /* --header-logo-link-top: -1rem; */
+    /* --header-logo-link-left: 0; */
   
     /** FOOTER **/
     --footer-padding: 5rem 0 1rem;
@@ -76,7 +76,7 @@
     --nav-item-font-size: var(--font-size-medium);
     --nav-item-letter-spacing: .04rem;
     --nav-item-display: inline-block;
-    --nav-item-margin: 0 2rem 0 0;
+    --nav-item-margin: 0 0 0 2rem;
     --nav-item-link-hover: var(--color-white);
   
     /** BUTTON **/
@@ -181,8 +181,8 @@
       ============================= */
   
   ul.row {
-    margin: -1rem;
-    padding: 0;
+    margin: 0;
+    padding: -1rem;
     list-style: none;
   }
   
@@ -193,6 +193,8 @@
   } */
   
   [class*='col-'] {
+    /* float: left; */
+    /* padding: 0.5rem; */
     margin: 1rem;
   }
   
@@ -214,11 +216,12 @@
   /* Navbar
       ============================= */
   
-  .navbar-menu {
+  /* .navbar-menu {
     float: right;
-  }
+  } */
   
   .nav {
+    display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -230,7 +233,10 @@
     font-weight: var(--nav-item-font-weight);
     font-size: var(--nav-item-font-size);
     letter-spacing: var(--nav-item-letter-spacing);
-    display: var(--nav-item-display);
+    /* display: var(--nav-item-display); */
+  }
+
+  .nav .nav-item + .nav-item {
     margin: var(--nav-item-margin);
   }
   
@@ -271,15 +277,20 @@
          background: transparent;
   }
   
-  .header-logo {
+  /* .header-logo {
     position: var(--header-logo-position);
-  }
+  } */
   
-  .header-logo a {
+  /* .header-logo a {
     display: var(--header-logo-link-display);
     position: var(--header-logo-link-position);
     top: var(--header-logo-link-top);
     left: var(--header-logo-link-left);
+  } */
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
   }
   
   /* Footer
