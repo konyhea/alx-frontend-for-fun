@@ -657,7 +657,7 @@
 
     }
 
-    .tag-list li:after {
+    .tag-list li::after {
         content:  ‘, ’;
     }
 
