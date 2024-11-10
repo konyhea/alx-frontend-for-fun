@@ -658,7 +658,7 @@
     }
 
     .tag-list li:after {
-        content: " , ";
+        content:  ‘, ’;
     }
 
     .tag-list li:last-child::after {
