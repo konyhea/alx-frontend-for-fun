@@ -701,20 +701,43 @@ form:has(input[type="text"], input[type="email"], textarea) textarea {
     outline: 0;
 }
 
-/* Add extra padding on the right for text and email inputs */
-form:has(input[type="text"], input[type="email"]) input[type="text"],
-form:has(input[type="text"], input[type="email"]) input[type="email"] {
+/* Target all input[type="text"], input[type="email"], and textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+    position: relative;
+    width: 100%;
+    padding: 1.2rem;
+    line-height: 1;
+    border: 0.1rem solid var(--color-black);
+    background-color: var(--color-white);
+    box-shadow: none;
+    outline: 0;
+}
+
+/* Target all input[type="text"] and input[type="email"] for additional right padding */
+input[type="text"],
+input[type="email"] {
     padding-right: 3rem;
 }
 
-/* Focus state for inputs and textarea */
-form:has(input[type="text"], input[type="email"], textarea) input:focus,
-form:has(input[type="text"], input[type="email"], textarea) textarea:focus {
+/* Focus state for input[type="text"], input[type="email"], and textarea */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
     border: 0.1rem solid var(--color-grey);
     background-color: var(--color-light-grey);
 }
 
+/* Placeholder styling */
+::placeholder {
+    color: var(--color-grey);
+    opacity: 0.7;
+}
+
+
 /* Styling for placeholder */
+
 ::placeholder {
     font-style: italic;
     font-size: var(--font-size-small);
