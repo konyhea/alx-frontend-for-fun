@@ -683,7 +683,6 @@
     label {
         cursor: pointer;
         display: block;
-        white-space: no-wrap;
         font-size: 1.4rem;
         padding: 0 0 .5rem;
     }
