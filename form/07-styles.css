@@ -845,7 +845,7 @@ input:not(:placeholder-shown) ~ .form-field-icon::after {
 }
 
 /* Targeting the icon with the class "search-icon" inside "search-button" */
-.form-search .search-button .search-icon {
+.search-button .search-icon {
     fill: var(--color-white);
     width: 1.5rem;
     height: 1.5rem;
