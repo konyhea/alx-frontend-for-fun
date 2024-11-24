@@ -759,5 +759,6 @@ form:has(input[type="text"], input[type="email"], textarea) textarea:focus {
 
 .form-group:focus-within .form-help {
     max-height: 20rem;
+    margin: .4rem 0 0;
 }
 
