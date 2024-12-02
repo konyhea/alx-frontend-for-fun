@@ -1,0 +1,15 @@
+// Mixin definition to set margin
+@mixin margin($margin-right-left) {
+    margin: 0px $margin-right-left;
+  }
+  
+  // Using the mixin for the body with a margin of 10px
+  body {
+    @include margin(10px);
+  }
+  
+  // Using the mixin for div with a margin of 15px
+  div {
+    @include margin(15px);
+  }
+  

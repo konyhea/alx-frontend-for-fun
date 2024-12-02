@@ -1,0 +1,16 @@
+/* Sass style using nested declarations */
+
+body {
+    font-size: 14px; /* Default font size for body */
+  
+    /* Styling all h1 tags inside the body tags */
+    h1 {
+      font-size: 16px;
+    }
+  
+    /* Font size 12px for h1 tags with class .smaller inside body tags */
+    h1.smaller {
+      font-size: 12px;
+    }
+  }
+  

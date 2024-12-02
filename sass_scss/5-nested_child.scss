@@ -1,0 +1,12 @@
+
+/* Sass style using nested declarations */
+
+body {
+    color: #3D3D3D; /* Default text color for all elements inside body */
+  
+    /* Apply color to .red class elements that are direct children of body */
+    > .red {
+      color: #FF0000; /* Text color for .red elements */
+    }
+}
+
