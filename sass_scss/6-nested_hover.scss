@@ -1,11 +1,8 @@
 /* Sass style using nested declarations */
 
 button {
-    // Default color for button 
-    
     color: #FF0000;
-    :hover {
-        // Color on hover 
+    &:hover {
       color: #00FF00;  
     }
   }
