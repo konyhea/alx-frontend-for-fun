@@ -1,4 +1,4 @@
-// Mixin definition to set margin
+/*  Mixin definition to set margin */
 @mixin margin($margin-right-left) {
     margin: 0px $margin-right-left;
   }
