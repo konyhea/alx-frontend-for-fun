@@ -1,10 +1,10 @@
-/* 
-    SASS STYLE THAT ASSIGNS VARIABLE
-*/
-
+/* Using SAAS style variable */
 $text-color: #3D3D3D;
 
-body, p {
+body {
     color: $text-color;
 }
 
+p {
+    color: $text-color;
+}
